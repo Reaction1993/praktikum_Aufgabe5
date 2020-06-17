@@ -16,7 +16,7 @@ public class UtilTest {
 
     @Test
     public void vaildDate() {
-        for (int i = 1; i < 13; ++i){
+        for (int i = 1; i <= 12; ++i){
             if (i <= 6){
                 assertTrue(istErstesHalbjahr(i));
             } else {

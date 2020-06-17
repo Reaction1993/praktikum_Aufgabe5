@@ -3,6 +3,7 @@ package de.hfu;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import de.hfu.Queue;
 
 public class QueueTest {
     int queueSize = 3;

@@ -3,7 +3,6 @@ package de.hfu;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import de.hfu.Queue;
 
 public class QueueTest {
     int queueSize = 3;
@@ -19,7 +18,17 @@ public class QueueTest {
             assertEquals(i, queue.dequeue());
         }
     }
+    @Test
+    public void lastElementCheck() {
+        for(int i = 0; i < queueSize + 1; ++i){
+            queue.enqueue(i);
+        }
+        for(int i = 0; i < queueSize - 1; ++i){
+            assertEquals(i, queue.dequeue());
+        }
 
+        assertEquals(queueSize, queue.dequeue());
+    }
     /*
     Test ungültige Queuelänge
      */
@@ -41,4 +50,5 @@ public class QueueTest {
             assertEquals(i, queue.dequeue());
         }
     }
+
 }

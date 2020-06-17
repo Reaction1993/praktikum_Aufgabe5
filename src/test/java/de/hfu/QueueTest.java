@@ -8,12 +8,13 @@ public class QueueTest {
 
     @Test
     public void enqueue() {
-        Queue queue = new Queue(3);
-        for(int i=0;i<3;++i){
+        int queueSize = 3;
+        Queue queue = new Queue(queueSize);
+        for(int i=0;i<queueSize;++i){
             queue.enqueue(i);
         }
 
-        for(int i=0;i<3;++i){
+        for(int i=0;i<queueSize;++i){
             assertEquals(i, queue.dequeue());
         }
     }

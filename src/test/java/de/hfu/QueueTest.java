@@ -9,7 +9,7 @@ public class QueueTest {
     Queue queue = new Queue(queueSize);
 
     @Test
-    public void enqueue() {
+    public void queue() {
         for (int i = 0; i < queueSize; ++i) {
             queue.enqueue(i);
         }

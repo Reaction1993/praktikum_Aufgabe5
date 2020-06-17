@@ -24,7 +24,7 @@ public class QueueTest {
      */
     @Test(expected = IllegalArgumentException.class)
     public void invalidLength() {
-        Queue queue = new Queue(-1);
+        Queue queue1 = new Queue(-1);
         Queue queue2 = new Queue(0);
     }
 

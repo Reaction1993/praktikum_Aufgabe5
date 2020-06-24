@@ -2,15 +2,12 @@ package residents.repository;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-import org.hamcrest.CoreMatchers;
+
 import residents.service.ResidentServiceException;
-import residents.repository.ResidentRepository;
 import residents.service.BaseResidentService;
 import residents.domain.Resident;
 
-import java.security.UnrecoverableEntryException;
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.text.SimpleDateFormat;

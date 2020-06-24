@@ -54,6 +54,7 @@ public class ResidentRepositoryTest {
 
 
     }
+
     @Test
     public void uniqueTest() throws ResidentServiceException{
         assertEquals(this.residentService.getUniqueResident(new Resident("Sabine", "", "", "", null)).getFamilyName(),  "Maier");
